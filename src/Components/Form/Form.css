@@ -1,0 +1,92 @@
+.inputs input {
+  width: 300px;
+  height: 45px;
+  border: 1px solid transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  background-color: #224957;
+  color: #fff;
+  font-size: 14px;
+}
+.inputs input:focus {
+  border: none;
+  outline: 0;
+}
+::placeholder {
+  color: white;
+  font-size: 14px;
+}
+.inputs {
+  gap: 1.5rem;
+}
+.pass-text a {
+  text-decoration: none;
+  color: #20df7f;
+  cursor: pointer;
+}
+.pass-text a:hover {
+  color: #20b86c;
+}
+input[type="checkbox"] {
+  width: 18px;
+  height: 17px;
+  appearance: none;
+  background-color: #224957;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin-right: 6px;
+  position: relative;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked::before {
+  content: "\2714";
+  font-size: 14px;
+  color: #000;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0px;
+  top: -2px;
+  background-color: #20b86c;
+  width: 18px;
+  height: 17px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.rem-in {
+  font-size: 14px;
+  gap: 68px;
+}
+.rem-in label {
+  cursor: pointer;
+}
+.btn button {
+  width: 300px;
+  height: 45px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #20df7f;
+  color: #fff;
+}
+.btn button:hover {
+  background-color: #20b86c;
+}
+.foot img {
+  position: absolute;
+  bottom: 0;
+}
+@media (max-width: 334px) {
+  .inputs input {
+    width: 280px;
+    height: 45px;
+  }
+  .btn button {
+    width: 280px;
+    height: 45px;
+  }
+  .rem-in {
+    gap: 56px;
+  }
+}
